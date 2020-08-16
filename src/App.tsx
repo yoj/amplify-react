@@ -49,7 +49,6 @@ function App() {
      const client = API.graphql(graphqlOperation(onCreateTodo))
 
      if ("subscribe" in client) {
-      console.log(client)
       client.subscribe({
         next: (eventData) => {
           console.log(eventData)
