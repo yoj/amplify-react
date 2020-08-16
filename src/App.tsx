@@ -51,7 +51,6 @@ function App() {
      if ("subscribe" in client) {
       console.log(client)
       client.subscribe({
-        //next: ( {value: {data}} : )
         next: (eventData) => {
           console.log(eventData)
         }
